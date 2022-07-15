@@ -1,0 +1,11 @@
+{
+  "namespace": "com.cdr",
+  "type": "record",
+  "name": "CurrentBillingCondition",
+  "fields": [
+    {"name": "MSISDN","type": "string"},
+    {"name": "serviceName","type": "string"},
+    {"name": "billingConditionID","type": "int"},
+    {"name":"lastUpdate","type":{"type":"long","logicalType":"timestamp-millis"}}
+  ]
+}

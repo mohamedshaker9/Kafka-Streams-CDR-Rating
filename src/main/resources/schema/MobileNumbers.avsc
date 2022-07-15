@@ -1,0 +1,12 @@
+{
+  "namespace": "com.cdr",
+  "type": "record",
+  "name": "MobileNumbers",
+  "fields": [
+    {"name": "MSISDN","type": "string"},
+    {"name": "companyCode","type": "string"},
+    {"name": "customerID","type": ["null","int"], "default": null},
+    {"name": "planID", "type": "int"},
+    {"name":"lastUpdate","type":{"type":"long","logicalType":"timestamp-millis"}}
+  ]
+}

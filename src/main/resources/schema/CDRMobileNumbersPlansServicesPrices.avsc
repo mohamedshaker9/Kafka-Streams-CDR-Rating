@@ -1,0 +1,18 @@
+{
+  "type": "record",
+  "name": "CDRMobileNumbersPlansServicesPrices",
+  "namespace": "com.cdr",
+  "fields": [
+    {"name": "MSISDN_A", "type":"string"},
+    {"name": "MSISDN_B", "type":"string"},
+    {"name": "callTime", "type": "long"},
+    {"name": "duration", "type": "int"},
+    {"name": "companyCode","type": "string"},
+    {"name": "customerID","type": ["null","int"], "default": null},
+    {"name": "planID", "type": "int"},
+    {"name": "serviceName", "type":"string", "default": "sameOperatorCall"},
+    {"name": "price", "type" : {"type":"bytes",
+      "scale":2,"precision":6, "logicalType":"decimal"}},
+    {"name": "quantityTypeID", "type": "int"}
+  ]
+}
