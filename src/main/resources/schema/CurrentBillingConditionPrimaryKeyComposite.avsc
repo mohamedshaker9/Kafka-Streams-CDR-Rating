@@ -1,0 +1,9 @@
+{
+  "namespace": "com.cdr",
+  "type": "record",
+  "name": "CurrentBillingConditionPrimaryKeyComposite",
+  "fields": [
+    {"name": "MSISDN","type": "string"},
+    {"name": "serviceName","type": "string"}
+      ]
+}

@@ -1,0 +1,10 @@
+{
+  "namespace": "com.cdr",
+  "type": "record",
+  "name": "PlansServicesPricesPrimaryCompositeKey",
+  "fields": [
+    {"name": "planID","type": "int"},
+    {"name": "serviceName","type": "string"},
+    {"name": "billingConditionID","type": "int"}
+  ]
+}

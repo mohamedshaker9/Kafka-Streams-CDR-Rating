@@ -1,0 +1,14 @@
+{
+  "namespace": "com.cdr",
+  "type": "record",
+  "name": "PlansServicesPrices",
+  "fields": [
+    {"name": "planID","type": "int"},
+    {"name": "serviceName","type": "string"},
+    {"name": "billingConditionID","type": "int"},
+    {"name": "price", "type" : {"type":"bytes",
+            "scale":2,"precision":6, "logicalType":"decimal"}},
+    {"name": "quantityTypeID", "type": "int"},
+    {"name":"lastUpdate","type":{"type":"long","logicalType":"timestamp-millis"}}
+  ]
+}
