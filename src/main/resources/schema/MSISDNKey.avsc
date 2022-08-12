@@ -1,0 +1,9 @@
+{
+  "type": "record",
+  "name": "MSISDNKey",
+  "namespace": "com.cdr",
+  "fields": [
+    {"name": "MSISDN_A", "type":"string"}
+  ]
+
+}
