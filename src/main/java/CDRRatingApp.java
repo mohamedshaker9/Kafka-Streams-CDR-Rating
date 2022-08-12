@@ -22,7 +22,7 @@ public class CDRRatingApp {
         props.put(StreamsConfig.APPLICATION_ID_CONFIG, AppConfigs.APP_NAME);
         props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, AppConfigs.BROKERS);
         props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
-        props.put(StreamsConfig.COMMIT_INTERVAL_MS_CONFIG, 0);
+        props.put(StreamsConfig.COMMIT_INTERVAL_MS_CONFIG, 500);
 
         StreamsBuilder streamsBuilder = new StreamsBuilder();
 
@@ -56,6 +56,7 @@ public class CDRRatingApp {
                 Consumed.with(AppSerdes.MSISDNKey(), AppSerdes.CDR()));
 
         //Join CDR and MobileNumbers
+        x
         KStream<MSISDNKey, RawCDRMobileNumbers> rawCDRMobileNumbersKStream =
                 cdrkStream.join(mobileNumbersKTable,
                         (cdr, mobileNumber)->

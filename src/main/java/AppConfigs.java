@@ -1,7 +1,8 @@
 public abstract class AppConfigs {
-    public static final String  APP_NAME = "CDRRatingApp2";
-//    public static final String  BROKERS = "localhost:9092,localhost:9093,localhost:9094";
-//    public static final String  BROKERS = "192.168.73.167:9092,192.168.73.167:9093,192.168.73.167:9094";
+    public static final String  APP_NAME = "CDRRatingApp6";
+    public static final String  BROKERS = "localhost:9092,localhost:9093,localhost:9094";
+//    public static final String  BROKERS = "10.0.0.4:19092,10.0.0.4:19093,10.0.0.4:19094";
+//        public static final String BROKERS = "cdrsgp.eastus2.cloudapp.azure.com:9092,cdrsgp.eastus2.cloudapp.azure.com:9093,cdrsgp.eastus2.cloudapp.azure.com:9094";
 
     public static final String  TOPIC_NIFI_READING_NAME = "nifi-cdr";
     public static final String  TOPIC_NIFI_READING_NAME_WITH_KEY_AVRO =  "nifi-cdr-with-key-avro";

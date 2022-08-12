@@ -9,9 +9,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class AppSerdes extends Serdes {
+//    private static final String  SCHEMA_REGISTRY_URL = "http://cdrsgp.eastus2.cloudapp.azure.com:8081";
 
       private static final String  SCHEMA_REGISTRY_URL = "http://localhost:8081";
-//        private static final String  SCHEMA_REGISTRY_URL = "http://192.168.73.167:8081";
+//        private static final String  SCHEMA_REGISTRY_URL = "http://10.0.0.4:8081";
 
     public static SpecificAvroSerde<CurrentBillingCondition> CurrentBillingCondition() {
         SpecificAvroSerde<CurrentBillingCondition> serde = new SpecificAvroSerde<>();
